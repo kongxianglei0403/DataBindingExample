@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="com.kxl.atu.databindingexample.bean.User"/>
+        <variable
+            name="user"
+            type="User"/>
+        <variable
+            name="event"
+            type="com.kxl.atu.databindingexample.listener.EventListener"/>
+        <variable
+            name="can"
+            type="String"/>
+    </data>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@{`firstName:`+user.firstName}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@{`lastName:`+user.lastName}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@{`age:`+user.age}" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{can}"
+            android:onClick="@{event.click1}"/>
+
+    </LinearLayout>
+</layout>

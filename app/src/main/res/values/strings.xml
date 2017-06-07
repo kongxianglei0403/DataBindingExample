@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DataBindingExample</string>
+    <string name="sample_title_basic">A simple basic example</string>
+    <string name="title_activity_basic">BasicActivity</string>
+
+    <string name="just_kill_find">Kill findviewbyid</string>
+    <string name="title_activity_find">FindViewActivity</string>
+
+    <string name="basic_data_type">basic data type</string>
+    <string name="title_activity_basic_data">BasicDataActivity</string>
+    <string name="bind_event">bind event</string>
+    <string name="auto_update">auto update</string>
+    <string name="title_activity_auto_update">AutoUpdateActivity</string>
+    <string name="recycler">bind recycler</string>
+</resources>

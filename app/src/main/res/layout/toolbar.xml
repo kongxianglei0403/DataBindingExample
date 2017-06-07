@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="com.kxl.atu.databindingexample.bean.Content" />
+
+        <variable
+            name="content"
+            type="Content" />
+    </data>
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        app:subtitle="@{content.subTitle}"
+        app:subtitleTextColor="@android:color/white"
+        app:title="@{content.title}"
+        app:titleTextColor="@android:color/white" />
+
+
+</layout>
